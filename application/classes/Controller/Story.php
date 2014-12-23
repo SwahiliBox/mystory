@@ -135,7 +135,7 @@ class Controller_Story extends Controller_Template {
         $all_stories = ORM::factory('Story')->where('story_id', '=', $this->active_story_config['id'])
             ->find_all();
 
-        $media = ORM::factory('StoryMedia');
+        $media = ORM::factory('StoryMedia')->where('story_id', '=', 0);
 
         foreach($all_stories as $all_stories_item)
         {
