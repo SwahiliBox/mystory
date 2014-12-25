@@ -4,7 +4,7 @@ class Utilities {
     public static function clean_text($text)
     {
         $new_text = str_replace("\n", '', $text);
-        $new_text = str_replace("'", "\'", $new_text);
+        $new_text = str_replace("'", "\\'", $new_text);
 
         return $new_text;
     }
