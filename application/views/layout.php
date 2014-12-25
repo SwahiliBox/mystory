@@ -63,7 +63,7 @@
     </div>
     <!-- /Main -->
 
-    <footer class="text-center">(c)&nbsp;<?php echo(date("Y")); ?> <a href="http://swahilibox.co.ke" target="_blank">SwahiliBox</a>. This Bootstrap 3 dashboard layout is compliments of <a href="http://www.bootply.com/85850"><strong>Bootply.com</strong></a></footer>
+    <footer class="text-center">&copy;<?php echo(date("Y")); ?> <a href="http://swahilibox.co.ke" target="_blank">SwahiliBox</a>. This Bootstrap 3 dashboard layout is compliments of <a href="http://www.bootply.com/85850"><strong>Bootply.com</strong></a></footer>
     <script src="<?php echo URL::base().'assets/js/scripts.js';?>"></script>
 </body>
 </html>
