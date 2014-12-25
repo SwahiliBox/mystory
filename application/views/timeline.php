@@ -5,11 +5,10 @@
 
     // note that months are zero-based in the JavaScript Date object
     var items = new vis.DataSet([
-<?php foreach($stories as $story): ?>
+        <?php foreach($stories as $story): ?>
         <?php $date_time = strtotime($story->story_datetime); ?>
-        <?php $story->story_text = Utilities::clean_text($story->story_text); ?>
         {start: new Date(<?php echo date("Y", $date_time); ?>,<?php echo date("m", $date_time); ?>,<?php echo date("d", $date_time); ?>,<?php echo date("H", $date_time); ?>,<?php echo date("i", $date_time); ?>,<?php echo date("s", $date_time); ?>), content: '<?php echo Utilities::construct_body($story); ?>'},
-<?php endforeach; ?>
+        <?php endforeach; ?>
     ]);
 
     var options = {
