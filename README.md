@@ -6,6 +6,7 @@ Visual Story Telling Platform that aggregates social content and creates Story T
 ##Setup
 
 * Install MySQL if not installed.
+* Change the base_url setting in ```application/bootstrap.php```
 * Run ```database.sql``` and create the database.
 * Configure the systems database: ```application/config/database.php```.
 * Configure the map: ```application/config/map.php```
